@@ -3,12 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
+   
+    <title>Homework 11</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+
+   </head> 
   <body>
+  <div class="wrapper">
+    <header class="header">
+    <form class="search-form" id="search-form">
+      <input 
+      
+      class="search-query" 
+      type="text" 
+      name="searchQuery" 
+      autocomplete="off" 
+      placeholder="Search image..." 
+      />
+     
+      <button type="submit" class="search-btn">Search</button>
+
+    </form>
+    </header>
+      <div class="gallery"></div>
+  </div>
+
+ 
+
+  <button type="button" class="load-more">Load more</button>
+
+  <script type="module" src="./index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/scripts.js"></script>
+
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
   </body>
 </html>
