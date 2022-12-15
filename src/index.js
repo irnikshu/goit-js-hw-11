@@ -19,9 +19,7 @@ let page = 1;
 async function onSearch(e) {
     e.preventDefault();
 refs.loadMoreBtn.classList.add('is-hidden');
-    // setTimeout(() => {
-    //     refs.submitBtn.blur();
-    // }, 200);
+   
 
     const { elements: { searchQuery },
     } = e.currentTarget;
@@ -42,9 +40,7 @@ refs.loadMoreBtn.classList.add('is-hidden');
     return;
     }
 
-//     if (data.hits.length > 6) {
-// refs.upArrow.classList.remove('invisible');
-//     }
+
     
 Notify.success(`Hooray! We found ${data.totalHits} images.`)
 
@@ -67,15 +63,13 @@ Notify.success(`Hooray! We found ${data.totalHits} images.`)
     }
     refs.form.reset();
   
-    // refs.searchInput.blur();
+  
 }
 
 async function onLoadMore(e) {
     page += 1;
    
-    // setTimeout(() => {
-    //     refs.loadMoreBtn.blur();
-    // }, 200);
+   
 
    const data = await serverApi.fetchPhoto(page);
 
